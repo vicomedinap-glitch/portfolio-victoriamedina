@@ -73,7 +73,7 @@ export function Home() {
           >
             <div className="relative aspect-[3/4] overflow-hidden">
               <img 
-                src="public/img/projects/victoria.JPG"
+                src="/img/projects/victoria.JPG"
                 alt="Victoria Medina"
                 className="w-full h-full object-cover"
               />
