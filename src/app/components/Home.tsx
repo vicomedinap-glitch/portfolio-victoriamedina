@@ -23,7 +23,7 @@ export function Home() {
                 animate={{ opacity: 0.6 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                DISEÑADORA GRÁFICA
+                GRAPHIC DESIGNER
               </motion.p>
               <h1 
                 className="leading-[1.1] tracking-tight" 
@@ -33,9 +33,9 @@ export function Home() {
                   fontWeight: 300,
                 }}
               >
-                Diseño con{' '}
-                <span className="italic" style={{ color: 'var(--wine)' }}>intención</span>,{' '}
-                construyo con estrategia.
+                Design with{' '}
+                <span className="italic" style={{ color: 'var(--wine)' }}>intention</span>,{' '}
+                build with strategy.
               </h1>
             </div>
             <motion.p 
@@ -52,7 +52,7 @@ export function Home() {
             </motion.p>
             <motion.button 
               onClick={() => {
-                document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
               }}
               className="inline-flex items-center gap-2 px-8 py-4 border border-black hover:bg-black hover:text-white transition-all duration-300 group"
               initial={{ opacity: 0 }}
@@ -61,7 +61,7 @@ export function Home() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Ver proyectos
+              View projects
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </motion.button>
           </motion.div>
@@ -83,8 +83,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* Proyectos */}
-      <section id="proyectos" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
+      {/* Projects */}
+      <section id="projects" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
         <motion.div 
           className="mb-20"
           initial={{ opacity: 0, y: 20 }}
@@ -100,11 +100,11 @@ export function Home() {
               fontWeight: 300,
             }}
           >
-            Casos de estudio
+            Case studies
           </h2>
           <p className="text-lg opacity-60 max-w-2xl">
-            Cada proyecto es una oportunidad para crear algo significativo. 
-            Aquí selecciono trabajo que muestra proceso, estrategia y resultado.
+            Every project is an opportunity to create something meaningful. 
+            Here I select work that shows process, strategy and result.
           </p>
         </motion.div>
 
@@ -157,7 +157,7 @@ export function Home() {
                       {project.brief}
                     </p>
                     <div className="flex items-center gap-2 text-sm" style={{ color: 'var(--wine)' }}>
-                      Ver caso completo
+                      View case study
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </div>
                   </div>
@@ -168,8 +168,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* Proceso Creativo */}
-      <section id="proceso" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
+      {/* Creative Process */}
+      <section id="process" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -185,11 +185,11 @@ export function Home() {
                 fontWeight: 300,
               }}
             >
-              Proceso
+              Process
             </h2>
             <p className="text-lg leading-relaxed opacity-70 mb-12">
-              No creo solo piezas gráficas. Desarrollo sistemas visuales 
-              que nacen de la estrategia y se ejecutan con sensibilidad.
+              I don’t just create graphic pieces. I develop visual systems 
+              born from strategy and executed with sensitivity.
             </p>
             <motion.div 
               className="aspect-[4/3] overflow-hidden bg-gray-100"
@@ -198,7 +198,7 @@ export function Home() {
             >
               <img 
                 src="https://images.unsplash.com/photo-1532623034127-3d92b01fb3c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwd29ya3NwYWNlJTIwY3JlYXRpdmV8ZW58MXx8fHwxNzcyNjE1MTY4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Proceso creativo"
+                alt="Creative process"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -208,23 +208,23 @@ export function Home() {
             {[
               {
                 number: "01",
-                title: "Investigación",
-                description: "Entiendo el contexto, la competencia y, sobre todo, a las personas. Cada marca habla a alguien. Mi trabajo es descubrir qué necesitan escuchar."
+                title: "Research",
+                description: "I understand the context, the competition, and above all, the people. Every brand speaks to someone. My job is to uncover what they need to hear."
               },
               {
                 number: "02",
-                title: "Estrategia",
-                description: "Defino posicionamiento, tono y dirección visual antes de crear cualquier forma. El diseño sin estrategia es decoración."
+                title: "Strategy",
+                description: "I define positioning, tone, and visual direction before creating any form. Design without strategy is decoration."
               },
               {
                 number: "03",
-                title: "Exploración",
-                description: "Experimento sin límites. Boceto, pruebo tipografías, juego con composiciones. Es aquí donde nacen las soluciones inesperadas."
+                title: "Exploration",
+                description: "I experiment without limits. I sketch, test typefaces, play with compositions. This is where unexpected solutions are born."
               },
               {
                 number: "04",
-                title: "Refinamiento",
-                description: "Elimino lo innecesario. Ajusto cada detalle hasta que el sistema funcione en todos los contextos con coherencia y flexibilidad."
+                title: "Refinement",
+                description: "I remove the unnecessary. I tweak every detail until the system works across all contexts with coherence and flexibility."
               },
             ].map((step, index) => (
               <motion.div 
@@ -253,8 +253,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* Branding Personal */}
-      <section id="sobre-mi" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
+      {/* Personal Branding */}
+      <section id="about-me" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
           <motion.div 
             className="lg:col-span-5"
@@ -286,28 +286,27 @@ export function Home() {
                 fontWeight: 300,
               }}
             >
-              Visión creativa
+              Creative Vision
             </h2>
             <div className="space-y-6 text-lg leading-relaxed opacity-70">
               <p>
-                Soy diseñadora gráfica con una formación que combina diseño
-                de comunicación visual y bellas artes. Esta intersección 
-                me permite crear trabajo que es tanto estratégico
-                como estéticamente resonante.
+                I am a graphic designer with a background that combines visual
+                communication design and fine arts. This intersection allows me
+                to create work that is both strategic and aesthetically resonant.
               </p>
               <p>
-                Creo que el diseño más poderoso es invisible en su complejidad pero 
-                imposible de ignorar en su impacto. Me interesa la tensión entre 
-                minimalismo y emoción, entre sistema y sensibilidad.
+                I believe the most powerful design is invisible in its complexity
+                but impossible to ignore in its impact. I'm interested in the
+                tension between minimalism and emotion, between system and sensitivity.
               </p>
               <p>
-                He trabajado con marcas emergentes y estudios establecidos, siempre 
-                buscando proyectos donde pueda aportar visión estratégica y ejecución 
-                refinada. Mi enfoque es colaborativo, riguroso y profundamente humano.
+                I've worked with emerging brands and established studios, always
+                seeking projects where I can contribute strategic vision and refined
+                execution. My approach is collaborative, rigorous, and deeply human.
               </p>
             </div>
             <div className="pt-6">
-              <p className="text-sm tracking-[0.15em] opacity-50 mb-4">CONTACTO</p>
+              <p className="text-sm tracking-[0.15em] opacity-50 mb-4">CONTACT</p>
               <div className="space-y-2">
                 <p className="text-lg">vicomedinap@gmail.com</p>
                 <p className="text-lg">+593 99 456 7829</p>
@@ -326,7 +325,7 @@ export function Home() {
             <a href="#" className="text-sm hover:opacity-60 transition-opacity">Facebook</a>
             <a href="#" className="text-sm hover:opacity-60 transition-opacity">LinkedIn</a>
           </div>
-          <p className="text-sm opacity-40">© 2026 Todos los derechos reservados</p>
+          <p className="text-sm opacity-40">© 2026 All rights reserved</p>
         </div>
       </footer>
     </main>

@@ -31,28 +31,28 @@ export function Navigation() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <motion.button 
-              onClick={() => scrollToSection('proyectos')}
+              onClick={() => scrollToSection('projects')}
               className="text-sm tracking-wide hover:opacity-60 transition-opacity"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Proyectos
+              Projects
             </motion.button>
             <motion.button 
-              onClick={() => scrollToSection('proceso')}
+              onClick={() => scrollToSection('process')}
               className="text-sm tracking-wide hover:opacity-60 transition-opacity"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Proceso
+              Process
             </motion.button>
             <motion.button 
-              onClick={() => scrollToSection('sobre-mi')}
+              onClick={() => scrollToSection('about-me')}
               className="text-sm tracking-wide hover:opacity-60 transition-opacity"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Sobre mí
+              About me
             </motion.button>
           </motion.div>
         )}

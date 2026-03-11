@@ -12,11 +12,11 @@ export function ProjectDetail() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Proyecto no encontrado
+            Project not found
           </h1>
           <Link to="/" className="inline-flex items-center gap-2 text-sm hover:opacity-60 transition-opacity">
             <ArrowLeft className="w-4 h-4" />
-            Volver al inicio
+            Back to home
           </Link>
         </div>
       </div>
@@ -39,7 +39,7 @@ export function ProjectDetail() {
       >
         <Link to="/" className="inline-flex items-center gap-2 text-sm hover:opacity-60 transition-opacity mb-12">
           <ArrowLeft className="w-4 h-4" />
-          Volver
+          Back
         </Link>
       </motion.div>
 
@@ -50,11 +50,11 @@ export function ProjectDetail() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
+        <div className="relative aspect-[16/9] bg-gray-100 flex items-center justify-center">
           <img 
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
       </motion.div>
@@ -70,7 +70,7 @@ export function ProjectDetail() {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
             <div>
-              <p className="text-xs tracking-[0.2em] opacity-40 mb-2">PROYECTO</p>
+              <p className="text-xs tracking-[0.2em] opacity-40 mb-2">PROJECT</p>
               <h1 
                 style={{ 
                   fontFamily: "'Cormorant Garamond', serif",
@@ -85,15 +85,15 @@ export function ProjectDetail() {
 
             <div className="space-y-6">
               <div>
-                <p className="text-xs tracking-[0.2em] opacity-40 mb-2">CATEGORÍA</p>
+                <p className="text-xs tracking-[0.2em] opacity-40 mb-2">CATEGORY</p>
                 <p className="text-lg">{project.category}</p>
               </div>
               <div>
-                <p className="text-xs tracking-[0.2em] opacity-40 mb-2">AÑO</p>
+                <p className="text-xs tracking-[0.2em] opacity-40 mb-2">YEAR</p>
                 <p className="text-lg">{project.year}</p>
               </div>
               <div>
-                <p className="text-xs tracking-[0.2em] opacity-40 mb-2">ROL</p>
+                <p className="text-xs tracking-[0.2em] opacity-40 mb-2">ROLE</p>
                 <p className="text-lg">{project.role}</p>
               </div>
             </div>
@@ -157,7 +157,7 @@ export function ProjectDetail() {
                   borderColor: 'var(--wine)',
                 }}
               >
-                La solución
+                Solution
               </h2>
               <p className="text-lg leading-relaxed opacity-70">
                 {project.solution}
@@ -178,7 +178,7 @@ export function ProjectDetail() {
                   borderColor: 'var(--wine)',
                 }}
               >
-                Impacto
+                Impact
               </h2>
               <p className="text-lg leading-relaxed opacity-70">
                 {project.impact}
@@ -200,12 +200,12 @@ export function ProjectDetail() {
                   fontWeight: 400,
                 }}
               >
-                Exploración visual
+                Visual exploration
               </h2>
               <motion.img 
                 src={project.explorationImages?.[0]}
                 alt="Visual exploration"
-                className="aspect-[16/9] bg-gray-100 w-full h-full object-cover"
+                className="aspect-[16/9] bg-gray-100 max-w-full max-h-full object-contain"
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               />
@@ -228,7 +228,7 @@ export function ProjectDetail() {
             className="inline-flex items-center gap-3 text-sm hover:opacity-60 transition-opacity"
           >
             <ArrowLeft className="w-4 h-4" />
-            Ver todos los proyectos
+            View all projects
           </Link>
         </div>
       </motion.div>
