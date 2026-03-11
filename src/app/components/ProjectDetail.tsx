@@ -202,13 +202,18 @@ export function ProjectDetail() {
               >
                 Visual exploration
               </h2>
-              <motion.img 
-                src={project.explorationImages?.[0]}
-                alt="Visual exploration"
-                className="aspect-[16/9] bg-gray-100 max-w-full max-h-full object-contain"
-                whileHover={{ scale: 1.01 }}
-                transition={{ duration: 0.3 }}
-              />
+              <div className="space-y-8">
+                {project.explorationImages && project.explorationImages.map((img: string, index: number) => (
+                  <motion.img 
+                    key={index}
+                    src={img}
+                    alt={`Visual exploration ${index + 1}`}
+                    className="aspect-[16/9] bg-gray-100 max-w-full max-h-full object-contain w-full"
+                    whileHover={{ scale: 1.01 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                ))}
+              </div>
             </motion.section>
             
           </div>
