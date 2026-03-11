@@ -54,6 +54,6 @@ export const projects: Project[] = [
     impact: "The identity helped position the conference as a serious and contemporary academic event, reinforcing its credibility and visual coherence across all touchpoints with attendees.",
     image: "/img/projects/congreso.JPG",
     featured: true,
-    explorationImages: ["/img/projects/congreso.PNG", "/img/projects/congreso2.PNG", "/img/projects/congreso3.PNG", "/img/projects/congreso4.PNG", "/img/projects/congreso5.PNG"]
+    explorationImages: ["/img/projects/congreso.PNG", "/img/projects/congreso2.png", "/img/projects/congreso3.png", "/img/projects/congreso4.png", "/img/projects/congreso5.png"]
   },
 ];
