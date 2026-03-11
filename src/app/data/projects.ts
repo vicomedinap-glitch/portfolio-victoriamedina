@@ -40,7 +40,7 @@ export const projects: Project[] = [
     impact: "The coherence between packaging and digital environment allowed the brand to be perceived as more professional and approachable, increasing recall and audience connection.",
     image: "/img/projects/logo-ninis.png",
     featured: true,
-    explorationImages: ["/img/projects/etiqueta-ninis.png"]
+    explorationImages: ["/img/projects/etiqueta-ninis.png", "/img/projects/etiqueta-ninis2.png", "/img/projects/postetiqueta-ninis.jpg"]
   },
   {
     id: "elinstituto-event",
@@ -54,6 +54,6 @@ export const projects: Project[] = [
     impact: "The identity helped position the conference as a serious and contemporary academic event, reinforcing its credibility and visual coherence across all touchpoints with attendees.",
     image: "/img/projects/congreso.JPG",
     featured: true,
-    explorationImages: ["/img/projects/congreso.PNG"]
+    explorationImages: ["/img/projects/congreso.PNG", "/img/projects/congreso2.PNG", "/img/projects/congreso3.PNG", "/img/projects/congreso4.PNG", "/img/projects/congreso5.PNG"]
   },
 ];
