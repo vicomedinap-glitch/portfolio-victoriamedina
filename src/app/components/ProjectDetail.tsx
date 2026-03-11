@@ -136,7 +136,7 @@ export function ProjectDetail() {
                   borderColor: 'var(--wine)',
                 }}
               >
-                Challenges
+                Challenge
               </h2>
               <p className="text-lg leading-relaxed opacity-70">
                 {project.challenge}
