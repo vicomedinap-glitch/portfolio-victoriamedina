@@ -115,7 +115,7 @@ export function ProjectDetail() {
                   borderColor: 'var(--wine)',
                 }}
               >
-                El brief
+                Brief
               </h2>
               <p className="text-lg leading-relaxed opacity-70">
                 {project.brief}
@@ -136,7 +136,7 @@ export function ProjectDetail() {
                   borderColor: 'var(--wine)',
                 }}
               >
-                El reto
+                Challenges
               </h2>
               <p className="text-lg leading-relaxed opacity-70">
                 {project.challenge}
