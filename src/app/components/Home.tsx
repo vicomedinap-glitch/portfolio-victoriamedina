@@ -44,11 +44,12 @@ export function Home() {
               animate={{ opacity: 0.7 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Creo identidades visuales que no solo se ven bien,
-              sino que responden a un propósito claro.
-              Cada decisión gráfica parte de análisis, 
-              dirección y coherencia, para construir marcas sólidas,
-              diferenciadas y preparadas para crecer.
+              I create visual identities that not only look good,
+              but also respond to a clear purpose.
+              Every graphic decision begins with analysis,
+              direction, and coherence, to build strong brands
+              that are differentiated and ready to grow.
+
             </motion.p>
             <motion.button 
               onClick={() => {
